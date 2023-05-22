@@ -11,6 +11,7 @@ THIS CODE IS ONLY FOR
 ALL OF THE CODE I HAVE DONE AS A PUBLIC REPOSITORY WITH THE NAME OF "MY-PROJECTS1" IS ONLY AND ONLY
 FOR THESE FIVE PEOPLE, AS IT IS ACCORDING TO OUR REQUIRMENTS.😊
 */
+/*کاپی رائٹ THE PRORAMMERS HUB SQUAD001*/
 #include<iostream>
 #include<iomanip>
 #include<fstream>
@@ -20,21 +21,30 @@ int main()
 {
     cout<<"            WELCOME TO LAHORE GARRISON UNIVERSITY             "<<endl;
     cout<<"                    A PROJECT OF PAK ARMY             "<<endl;
-    string name1,name2,name3;
+    // using arrays
+    string name[10];
+    // name[0,1,2] are for student's names
     cout<<" ENTER YOUR FIRST NAME: "<<endl;
-    //یہاں تک ہم نے کچھ بھی الگ نہیں کیا
-    // I HAVEN'T DID ANY THING DIFFERENT HERE ❤
-    cin>>name1;
+    cin>>name[0];
     cout<<" ENTER YOUR MIDDLE NAME: "<<endl;
-    cin>>name2;
+    cin>>name[1];
     cout<<" ENTER YOUR LAST NAME: "<<endl;
-    cin>>name3;
-    cout<<" YOUR NAME IS "<<name1<<" "<<name2<<" "<<name3<<endl;
+    cin>>name[2];
+    cout<<" YOUR NAME IS "<<name[0]<<" "<<name[1]<<" "<<name[2]<<endl;
+    //name[3,4,5] are for father's name
+    cout<<" ENTER YOUR FATHER FIRST NAME : "<<endl;
+    cin>>name[3];
+    cout<<" ENTER YOUR FATHER MIDDLE NAME : "<<endl;
+    cin>>name[4];
+    cout<<" ENTER YOUR FATHER LAST NAME : "<<endl;
+    cin>>name[5];
+    cout<<" YOUR FATHER NAME IS "<<name[3]<<" "<<name[4]<<" "<<name[5]<<endl;
     char gender;
+    char M,F,C,m,f,c;
     cout<<" ENTER YOUR GENDER: "<<endl;
-    cout<<"1. M FOR MALE "<<endl;
-    cout<<"2. F FOR FEMALE "<<endl;
-    cout<<"3. C FOR CUSTOM "<<endl;
+    cout<<"1. M.....MALE "<<endl;
+    cout<<"2. F.....FEMALE "<<endl;
+    cout<<"3. C.....CUSTOM "<<endl;
     cin>>gender;
     cout<<" YOUR GENDER IS "<<gender<<endl;
     int age;
@@ -45,39 +55,32 @@ int main()
     cout<<" ENTER YOUR QUALIFICATION TILL NOW "<<endl;
     cin>>qualification;
     cout<<" YOUR QUALIFICATION TILL NOW IS "<<qualification<<endl;
-    string address_yours;
-    cout<<" ENTER YOUR ADDRESS WITHOUT SPACES: ";
-    cout<<" JUST WRITE YOUR HOUSE NUMBER, BLOCK, SOCIETY, CITY "<<endl;
-    cin>>address_yours;
-    cout<<" YOUR ADDRESS IS "<<address_yours<<endl;
-    //یہاں تک ہم نے کچھ بھی الگ نہیں کیا
-    // I HAVEN'T DID ANY THING DIFFERENT HERE ❤
-
+    string address_yours[1000];
+    cout<<" ENTER YOUR ADRESS"<<endl;
+    cin>>address_yours[1000];
+    cout<<" YOUR ADDRESS IS "<<address_yours[1000]<<endl;
 
     int marks1;
     cout<<" ENTER YOUR MARKS IN MATRIC "<<endl;
     cin>>marks1;
     cout<<" YOUR MARKS IN MATRIC ARE "<<marks1<<endl;
 
-
     int marks2;
     cout<<" ENTER YOUR MARKS IN INTERMEDIATE "<<endl;
     cin>>marks2;
     cout<<" YOUR MARKS IN INTERMEDIATE ARE "<<marks2<<endl;
 
-
-   /* float percent1;
+    /*float percent1;
     percent1=(marks1/1100)*100;
-    cout<<" PERCENTEGE IN MATRIC= "<<percent1;
-
+    cout<<" PERCENTEGE IN MATRIC= "<<percent1<<endl;
 
     float percent2;
     percent2=(marks2/1100)*100;
-    cout<<" PERCENTAGE IN INTERMEDIATE= "<<percent2;*/
+    cout<<" PERCENTAGE IN INTERMEDIATE= "<<percent2<<endl;*/
 
-
-    string resulting1=(marks1>=500 && marks2>=500)? " YOU ARE ELIGIBLE TO APPLY " : " YOU ARE NOT ELIGIBLE TO APPLY ";
-    cout<<resulting1<<endl;  
+    string resulting1=(marks1>=500 && marks2>=550)? " YOU ARE ELIGIBLE TO APPLY " : " YOU ARE NOT ELIGIBLE TO APPLY ";
+    cout<<resulting1<<endl;
+    
     return 0;
 
 }
