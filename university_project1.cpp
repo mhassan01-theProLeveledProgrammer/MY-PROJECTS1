@@ -58,6 +58,11 @@ int main()
     cout<<" ENTER YOUR ADDRESS: "<<endl;
     cin>>addressyours[100];
     cout<<" YOUR ADRESS IS "<<addressyours<<endl;*/
+    cout<<"ENTER YOUR ADRESS: "<<endl;
+	char address[50];
+    cin.getline(address,50);
+	cout<<address<<endl;
+	
     int marks1;
     cout<<" ENTER YOUR MARKS IN MATRIC "<<endl;
     cin>>marks1;
