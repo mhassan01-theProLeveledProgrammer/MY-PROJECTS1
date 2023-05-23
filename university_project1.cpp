@@ -20,7 +20,6 @@ using namespace std;
 int main()
 {
     cout<<"            WELCOME TO LAHORE GARRISON UNIVERSITY             "<<endl;
-    cout<<"                    A PROJECT OF PAK ARMY             "<<endl;
     // using arrays
     string name[10];
     // name[0,1,2] are for student's names
@@ -55,11 +54,10 @@ int main()
     cout<<" ENTER YOUR QUALIFICATION TILL NOW "<<endl;
     cin>>qualification;
     cout<<" YOUR QUALIFICATION TILL NOW IS "<<qualification<<endl;
-    string address_yours[1000];
-    cout<<" ENTER YOUR ADRESS"<<endl;
-    cin>>address_yours[1000];
-    cout<<" YOUR ADDRESS IS "<<address_yours[1000]<<endl;
-
+    /*string  addressyours[100];
+    cout<<" ENTER YOUR ADDRESS: "<<endl;
+    cin>>addressyours[100];
+    cout<<" YOUR ADRESS IS "<<addressyours<<endl;*/
     int marks1;
     cout<<" ENTER YOUR MARKS IN MATRIC "<<endl;
     cin>>marks1;
