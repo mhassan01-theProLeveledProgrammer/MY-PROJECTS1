@@ -13,31 +13,26 @@ FOR THESE FIVE PEOPLE, AS IT IS ACCORDING TO OUR REQUIRMENTS.😊
 */
 /*کاپی رائٹ THE PRORAMMERS HUB SQUAD001*/
 #include<iostream>
-#include<iomanip>
-#include<fstream>
-#include<string>
+//#include<iomanip>
+//#include<fstream>
+//#include<string>
 using namespace std;
 int main()
 {
+    system(" cls ");
     cout<<"            WELCOME TO LAHORE GARRISON UNIVERSITY             "<<endl;
     // using arrays
-    string name[10];
-    // name[0,1,2] are for student's names
-    cout<<" ENTER YOUR FIRST NAME: "<<endl;
-    cin>>name[0];
-    cout<<" ENTER YOUR MIDDLE NAME: "<<endl;
-    cin>>name[1];
-    cout<<" ENTER YOUR LAST NAME: "<<endl;
-    cin>>name[2];
-    cout<<" YOUR NAME IS "<<name[0]<<" "<<name[1]<<" "<<name[2]<<endl;
-    //name[3,4,5] are for father's name
-    cout<<" ENTER YOUR FATHER FIRST NAME : "<<endl;
-    cin>>name[3];
-    cout<<" ENTER YOUR FATHER MIDDLE NAME : "<<endl;
-    cin>>name[4];
-    cout<<" ENTER YOUR FATHER LAST NAME : "<<endl;
-    cin>>name[5];
-    cout<<" YOUR FATHER NAME IS "<<name[3]<<" "<<name[4]<<" "<<name[5]<<endl;
+    cout<<" ENTER YOUR NAME:"<<endl;
+    char yourname[100];
+    cin.getline(yourname,100);
+    cout<<" YOUR NAME IS "<<yourname<<endl;
+    char fathername[100];
+    cout<<" ENTER YOUR FATHER NAME: "<<endl;
+    cin.getline(fathername,100);
+    cout<<" YOUR FATHER NAME IS "<<fathername<<endl;
+    system(" pause ");
+    cout<<" PRESS ANY KEY TO PROCEED "<<endl;
+    system(" cls ");
     char gender;
     char M,F,C,m,f,c;
     cout<<" ENTER YOUR GENDER: "<<endl;
@@ -50,18 +45,22 @@ int main()
     cout<<" ENTER YOUR AGE: "<<endl;
     cin>>age;
     cout<<" YOUR AGE IS "<<age<<endl;
-    string qualification;
-    cout<<" ENTER YOUR QUALIFICATION TILL NOW "<<endl;
-    cin>>qualification;
-    cout<<" YOUR QUALIFICATION TILL NOW IS "<<qualification<<endl;
+    system(" pause ");
+    cout<<" PRESS ANY KEY TO PROCEED "<<endl;
+    system(" cls ");
+    char address[100];
+    cout<<" ENTER YOUR VALID ADDRESS "<<endl;
+    //cin.getline(address,100);
+    cin.getline(address,100);
+    cin.getline(address,100);
+	cout<<" YOUR ADDRESS IS "<<address<<endl;
+    system(" pause ");
+    cout<<" PRESS ANY KEY TO PROCEED "<<endl;
+    system(" cls ");
     /*string  addressyours[100];
     cout<<" ENTER YOUR ADDRESS: "<<endl;
     cin>>addressyours[100];
     cout<<" YOUR ADRESS IS "<<addressyours<<endl;*/
-    cout<<"ENTER YOUR ADRESS: "<<endl;
-	char address[50];
-    cin.getline(address,50);
-	cout<<address<<endl;
 	
     int marks1;
     cout<<" ENTER YOUR MARKS IN MATRIC "<<endl;
@@ -73,6 +72,14 @@ int main()
     cin>>marks2;
     cout<<" YOUR MARKS IN INTERMEDIATE ARE "<<marks2<<endl;
 
+    int marks3;
+    cout<<" ENTER YOUR MARKS IN ANY OF THE ENTRANCE TEST YOU GAVE WITHIN A YEAR "<<endl;
+    cin>>marks3;
+    cout<<" YOUR MARKS IN THE ENTRANCE TEST ARE "<<marks3<<endl;
+    system(" pause ");
+    cout<<" PRESS ANY KEY TO PROCEED "<<endl;
+    system(" cls ");
+
     /*float percent1;
     percent1=(marks1/1100)*100;
     cout<<" PERCENTEGE IN MATRIC= "<<percent1<<endl;
@@ -80,9 +87,20 @@ int main()
     float percent2;
     percent2=(marks2/1100)*100;
     cout<<" PERCENTAGE IN INTERMEDIATE= "<<percent2<<endl;*/
+    if (marks1>1100 || marks1<0 || marks2>1100 || marks2<0 || marks3>1100 || marks3<0)
+    {
+        cout<<" ERROR OCCURED"<<endl;
+        cout<<" USE CORRECT NUMBER INPUT"<<endl;
+        cout<<" ANY OF YOUR GIVEN MARKS ARE INCORRECT";
+    }
+    
 
-    string resulting1=(marks1>=500 && marks2>=550)? " YOU ARE ELIGIBLE TO APPLY " : " YOU ARE NOT ELIGIBLE TO APPLY ";
+    string resulting1=(marks1>=500 && !(marks1>1100) && marks2>=550 && !(marks2>1100) && marks3>50 && !(marks3>100))? " YOU ARE ELIGIBLE TO APPLY " : " YOU ARE NOT ELIGIBLE TO APPLY ";
     cout<<resulting1<<endl;
+    system(" pause ");
+    system(" cls ");
+    
+
     
     return 0;
 
